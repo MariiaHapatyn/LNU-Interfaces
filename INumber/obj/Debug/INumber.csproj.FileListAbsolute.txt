@@ -1,0 +1,6 @@
+D:\Visual Studio Projects\Visual C#\INumber\INumber\bin\Debug\INumber.exe.config
+D:\Visual Studio Projects\Visual C#\INumber\INumber\bin\Debug\INumber.exe
+D:\Visual Studio Projects\Visual C#\INumber\INumber\bin\Debug\INumber.pdb
+D:\Visual Studio Projects\Visual C#\INumber\INumber\obj\Debug\INumber.csprojResolveAssemblyReference.cache
+D:\Visual Studio Projects\Visual C#\INumber\INumber\obj\Debug\INumber.exe
+D:\Visual Studio Projects\Visual C#\INumber\INumber\obj\Debug\INumber.pdb
