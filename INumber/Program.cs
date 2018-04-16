@@ -11,20 +11,37 @@ namespace INumber {
             Console.WriteLine( "Enter size:" );
             int size = int.Parse( Console.ReadLine() );
 
-            Console.WriteLine( "\nEnter the numbers:" );
+            Console.WriteLine( "\nEnter the integer numbers:" );
             for( int i = 0; i < size; i++ ) {
                 int a = int.Parse( Console.ReadLine() );
 
-                myTask.input( a );
+                myTask.input_int( a );
             }
 
-            Console.WriteLine( "sum={0}\n", myTask.int_sum() );
+            Console.WriteLine( "integer sum={0}\n", myTask.int_sum() );
 
-            Console.WriteLine( "product={0}\n", myTask.int_product() );
+            Console.WriteLine( "integer product={0}\n", myTask.int_product() );
 
-            Console.WriteLine( "arithmetic mean={0}\n", myTask.int_arithmetic_mean() );
+            Console.WriteLine( "integer arithmetic mean={0}\n", myTask.int_arithmetic_mean() );
+
+            Console.WriteLine( "\nEnter the  numerators and denominators:" );
+            for( int i = 0; i < size; i++ ) {
+                int a = int.Parse( Console.ReadLine() );
+
+                int b = int.Parse( Console.ReadLine() );
+
+                myTask.input_rational( a, b );
+            }
+
+            Console.WriteLine( "rational sum={0}\n", myTask.rational_sum( size ) );
+
+            Console.WriteLine( "rational product={0}\n", myTask.rational_product( size ) );
+
+            Console.WriteLine( "rational arithmetic mean={0}\n", myTask.rational_arithmetic_mean( size ) );
+
 
             Console.ReadLine();
         }
     }
+
 }
