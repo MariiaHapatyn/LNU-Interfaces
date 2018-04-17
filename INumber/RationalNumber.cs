@@ -31,7 +31,7 @@ namespace INumber {
             public double addition ( double a, double b, double c, double d ) {
                 double numerator = ( a * d ) + ( c * b );
                 double denominator = b * d;
-                double k = nsd( numerator, denominator );
+                double k = gcd( numerator, denominator );
                 numerator = numerator / k;
                 denominator = denominator / k;
                 Console.WriteLine( "{0}/{1}", numerator, denominator );
@@ -41,7 +41,7 @@ namespace INumber {
             public double subtraction ( double a, double b, double c, double d ) {
                 double numerator = ( a * d ) - ( c * b );
                 double denominator = b * d;
-                double k = nsd( numerator, denominator );
+                double k = gcd( numerator, denominator );
                 numerator = numerator / k;
                 denominator = denominator / k;
                 Console.WriteLine( "{0}/{1}", numerator, denominator );
@@ -51,7 +51,7 @@ namespace INumber {
             public double multiplication ( double a, double b, double c, double d ) {
                 double numerator = a * c;
                 double denominator = b * d;
-                double k = nsd( numerator, denominator );
+                double k = gcd( numerator, denominator );
                 numerator = numerator / k;
                 denominator = denominator / k;
                 Console.WriteLine( "{0}/{1}", numerator, denominator );
@@ -61,7 +61,7 @@ namespace INumber {
             public double division ( double a, double b, double c, double d ) {
                 double numerator = a * d;
                 double denominator = b * c;
-                double k = nsd( numerator, denominator );
+                double k = gcd( numerator, denominator );
                 numerator = numerator / k;
                 denominator = denominator / k;
                 Console.WriteLine( "{0}/{1}", numerator, denominator );
