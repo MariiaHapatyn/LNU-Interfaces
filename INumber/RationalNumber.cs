@@ -18,12 +18,12 @@ namespace INumber {
                 this.sdenominator = sdenominator;
             }
 
-            double nsd ( double m, double n ) {
-                double p = 0;
+            double gcd ( double m, double n ) {
+                double remainder = 0;
                 m = Math.Abs( m ); n = Math.Abs( n );
-                if( n > m ) { p = m; m = n; n = p; }
+                if( n > m ) { remainder = m; m = n; n = remainder; }
                 do {
-                    p = m % n; m = n; n = p;
+                    remainder = m % n; m = n; n = remainder;
                 } while( n != 0 );
                 return ( m );
             }
