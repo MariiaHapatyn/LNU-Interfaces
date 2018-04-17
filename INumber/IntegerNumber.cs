@@ -29,6 +29,10 @@ namespace INumber {
             return product;
         }
         public double division ( double a, double b, double c = 0, double d = 0 ) {
+             if( b == 0 ) 
+                {
+                    throw new DivideByZeroException();
+                }
             double fraction = a / b;
             return fraction;
         }
